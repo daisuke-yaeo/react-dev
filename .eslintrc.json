@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "next",
-    "prettier",
-    "plugin:react/recommended"
-  ],
+  "extends": ["next", "prettier", "plugin:react/recommended"],
   "rules": {
     "react/react-in-jsx-scope": "off"
   }
 }
-		
