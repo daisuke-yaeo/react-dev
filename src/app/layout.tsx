@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import './globals.scss'
+import styles from './layout.module.scss'
 
 export const metadata: Metadata = {
   title: 'react-dev',
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>{children}</body>
+      <body className={styles.contentArea}>{children}</body>
     </html>
   )
 }
