@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.scss'
 import styles from './layout.module.scss'
+import Header from './ui/Header'
 
 export const metadata: Metadata = {
   title: 'react-dev',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={styles.contentArea}>{children}</body>
+      <body>
+        <Header />
+        <main className={styles.contentArea}>{children}</main>
+      </body>
     </html>
   )
 }
